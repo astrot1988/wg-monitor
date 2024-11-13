@@ -1,0 +1,7 @@
+services:
+
+  wg-monitor:
+    image: ${REGISTRY_HOST}/wg-monitor:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
