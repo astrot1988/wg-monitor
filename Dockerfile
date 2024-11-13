@@ -2,7 +2,7 @@ FROM alpine:latest
 
 RUN apk update && apk add --no-cache wireguard-tools bash crond
 
-COPY check_handshake.sh /usr/local/bin/check.sh
+COPY check.sh /usr/local/bin/check.sh
 
 RUN chmod +x /usr/local/bin/check.sh
 
