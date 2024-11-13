@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk update && apk add --no-cache wireguard-tools bash crond
+RUN apk update && apk add --no-cache wireguard-tools bash
 
 COPY check.sh /usr/local/bin/check.sh
 

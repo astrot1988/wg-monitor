@@ -2,7 +2,7 @@
 
 INTERFACES=$(wg show interfaces)
 CURRENT_TIME=$(date +%s)
-
+echo "Current time: $CURRENT_TIME"
 for INTERFACE in $INTERFACES; do
     LAST_HANDSHAKE=$(wg show $INTERFACE latest-handshakes | awk '{print $2}')
 
